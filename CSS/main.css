@@ -1,0 +1,564 @@
+@font-face {
+    font-family: hero;
+    src: url(../fonts/Hero.otf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+	font-family: 'Hero', sans-serif;
+}
+
+/* 			Navigation				*/
+.fixed-header {
+    width: 100%;
+    height: 170px;
+    position: relative;
+    z-index: 30;
+}
+
+.site-header {
+    position: absolute;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 31;
+}
+
+.nav {
+    position: relative;
+    margin: 0 100px;
+}
+
+/* 			Logo					*/
+a.header_logo {
+	float: left;
+    margin: 10px 10px 0 20px;
+    position: relative;
+    display: inline-block;
+    height: 150px;
+    width: 150px;
+    overflow: hidden;
+}
+
+.logo_img {
+    display: block;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+/* 			Normal Navigation		*/
+
+.site-navigation {
+	float: left;
+    position: relative;
+    padding: 0;
+	margin: 70px 0 0 20px;
+    height: 100px;
+    list-style: none;
+    text-align: center;
+}
+
+.site-navigation li {
+    float: left;
+	height: 100px;
+	font-variant: small-caps;
+    font-size: 1.3em;
+    letter-spacing: 1px;
+    line-height: 110px;
+}
+
+.site-navigation a {
+    text-decoration: none;
+    color: #333;
+    position: relative;
+    padding: 20px;
+    transition: .3s background-color;
+    white-space: nowrap;
+}
+
+.site-navigation a:hover {
+    color: #b9132a;
+}
+
+ul.site-navigation li a.navigation-active {
+    color: #dc1732;
+    cursor: default;
+}
+
+/* 			Mobile Navigation			*/
+.responsive-navigation {
+    top: 170px;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #ffffff;
+    list-style: none;
+    display: none;
+    position: absolute;
+}
+
+.responsive-navigation li {
+	padding-left: 100px;
+	padding-right: 100px;
+    font-size: 1em;
+    line-height: 40px;
+    height: 40px;
+}
+
+.responsive-navigation a {
+	float: left;
+	width: 100%;
+    text-decoration: none;
+    color: #888;
+    position: relative;
+	padding: 10px 0;
+    display: block;
+    transition: .3s background-color;
+    white-space: nowrap;
+	border-top: 1px solid #eaeaea;
+}
+
+.responsive-navigation a:hover {
+    color: #b9132a;
+}
+
+.responsive-navigation a.active {
+    color: #b9132a;
+    cursor: default;
+}
+
+ul.responsive-navigation li a.navigation-active {
+    color: #dc1732;
+    cursor: default;
+}
+
+.visible {
+    display: block !important;
+}
+
+/* 			Hamburger 				*/
+
+#hamburger {
+    top: 100px;
+    right: 100px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    cursor: pointer;
+}
+
+#hamburger span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #333;
+    border-radius: 3px;
+    opacity: 1;
+    left: 0;
+}
+
+#hamburger span:nth-child(1) {
+    top: 0;
+}
+
+#hamburger span:nth-child(2) {
+    top: 6px;
+}
+
+#hamburger span:nth-child(3) {
+    top: 12px;
+}
+
+/* 			Footer 					*/
+
+footer {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    bottom: 0;
+    border: 1px dotted #e1e1e1;
+}
+
+.footer-content {
+    position: relative;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.footer-navigation {
+    float: left;
+    width: 50%;
+}
+
+.footer-text-wrapper {
+    padding: 20px;
+}
+
+.footer-items {
+    padding: 80px 0;
+    list-style: none;
+    text-align: center;
+}
+
+.footer-items li {
+    display: inline-block;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.footer-items li:before {
+    content: " | ";
+    color: #666;
+    padding: 0 10px;
+}
+
+.footer-items li:first-child:before {
+    content: "";
+    padding: 0;
+}
+
+.footer-items a {
+    text-decoration: none;
+    color: #666;
+    padding: 10px;
+    transition: .3s background-color;
+    white-space: nowrap;
+}
+
+.footer-items a:hover {
+    color: #b9132a;
+}
+
+.social-media-content {
+    background: #666;
+    padding: 1px 0;
+}
+
+.social-media-items {
+    text-align: center;
+}
+
+.social-media-items li {
+    display: inline-block;
+}
+
+.twitter {
+    background: url('../img/twitter.png') no-repeat;
+}
+
+.twitter:hover {
+    background: url('../img/twitter-hover.png');
+}
+
+.facebook {
+    background: url('../img/facebook.png');
+}
+
+.facebook:hover {
+    background: url('../img/facebook-hover.png');
+}
+
+.social-media-icons {
+    height: 30px;
+    width: 30px;
+    background-size: contain;
+}
+
+.social-media-icons:hover {
+    height: 30px;
+    width: 30px;
+    background-size: contain;
+}
+
+/* 			Index 					*/
+.section {
+    position: relative;
+}
+
+.page-container {
+    position: relative;
+}
+
+.welcome-text {
+    display: inline-block;
+    float: left;
+    width: 60%;
+}
+
+.welcome-header {
+    float: left;
+    padding: 10px 0;
+}
+
+.welcome-content {
+    float: left;
+    padding: 10px 0;
+}
+
+.locations-image {
+    display: inline-block;
+    float: left;
+    width: 40%;
+}
+
+.btn-standard {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 20px;
+    background: #ed4544;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+.btn-standard:hover {
+    background: #d63636;
+    text-decoration: none;
+}
+
+.btn-small {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 14px;
+    background: #ed4544;
+    padding: 8px 15px 8px 15px;
+    text-decoration: none;
+}
+
+.btn-small:hover {
+    background: #d63636;
+    text-decoration: none;
+}
+
+/* Menu */
+.menu-holder {
+    float: left;
+    width: 33.3%;
+}
+
+/* Global */
+.basic-padding {
+    padding: 20px 40px;
+}
+
+.container {
+    position: relative;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 60px 0;
+}
+
+.margin-top-small {
+    margin-top: 20px;
+}
+
+.text-header-1 {
+    text-align: left;
+    font-size: 22px;
+    color: #333;
+}
+
+.text-header-2 {
+    text-align: center;
+    font-size: 30px;
+    color: #333;
+}
+
+.text-header-3 {
+    text-align: center;
+    font-size: 22px;
+    color: #333;
+}
+
+.text-paragraph-1 {
+    text-align: left;
+    font-size: 14px;
+    color: #666;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+    line-height: 20px;
+}
+
+.no-style {
+    list-style: none;
+    text-align: left;
+    padding: 0;
+}
+
+.extra-padding {
+    padding: 60px 60px 0 60px;
+}
+
+.text-paragraph-1 li {
+    position: relative;
+    padding: 5px 50px 5px 0;
+}
+
+.text-paragraph-1 li span {
+    position: absolute;
+    right: 0;
+}
+
+.parent-height {
+    display: flex;
+}
+
+.child-height {
+    flex: 1;
+}
+
+.padding-top {
+    padding-top: 15px;
+}
+
+.extra-margin-small {
+    margin-top: 20px;
+}
+
+.text-paragraph-1 li.extra-small {
+    padding: 2px 0 2px 0;
+}
+
+.extra-small {
+    font-size: 12px;
+    padding: 0;
+}
+
+.image-border {
+    border: 1px solid #666;
+    border-top: 0.2em solid #000;
+}
+
+.image-border-small {
+    border: 1px solid #666;
+}
+
+.image-contain {
+    width: 100%;
+}
+
+.image-row {
+    float: left;
+    width: 50%;
+}
+
+.image-container {
+    padding: 0 60px 60px 60px;
+}
+
+.action {
+    padding: 20px;
+}
+
+.vacancies-holder {
+    padding: 20px;
+}
+
+.location {
+    display: block;
+    width: 70%;
+    float: left;
+}
+
+.contact-information {
+    display: block;
+    width: 30%;
+    float: right;
+}
+
+.location-padding {
+    padding: 50px;
+    text-align: left;
+}
+
+.contact {
+    display: block;
+}
+
+.opening-hours {
+    display: block;
+    margin-top: 50px;
+}
+
+/* Modify on page width */
+@media screen and (max-width: 900px) {
+    .menu-holder {
+        width: 100%;
+        float: none;
+    }
+
+    .parent-height {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1161px) {
+    .display {
+        display: none !important;
+    }
+
+    .responsive-display {
+        display: block !important;
+    }
+	
+	a.header_logo {
+		left: 100px;
+	}
+
+    .container {
+        width: 90%;
+    }
+
+    .location {
+        width: 100%;
+    }
+
+    .contact-information {
+        width: 100%;
+    }
+
+    .image-row {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1162px) {
+    .display {
+        display: block !important;
+    }
+
+    .responsive-display {
+        display: none !important;
+    }
+
+    .container {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+	.page-container {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .nav {
+        width: 1600px;
+        margin: 0 auto;
+    }
+
+    .page-container {
+        width: 1600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
